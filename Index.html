@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Outfit Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Sync App</h1>
+            <p>Style your personal outfit according to the weather</p>
+        </header>
+
+        <div class="weather-input">
+            <input type="text" id="locationSearch" placeholder="Search for a location">
+            <div id="autocompleteResults" class="autocomplete-dropdown"></div>
+            <div id="map" style="height: 200px;"></div>
+            <button id="useLocation">Use Selected Location</button>
+        </div>
+
+        <div class="weather-display" id="weatherInfo">
+            <div class="weather-card">
+                <span id="city"></span>
+                <span id="temp"></span>
+                <span id="condition"></span>
+            </div>
+        </div>
+
+        <div class="style-selector">
+            <select id="stylePref">
+                <option value="casual">Casual</option>
+                <option value="formal">Formal</option>
+                <option value="sporty">Sporty</option>
+                <option value="bohemian">Bohemian</option>
+                <option value="business_casual">Business Casual</option>
+                <option value="streetwear">Streetwear</option>
+                <option value="vintage">Vintage</option>
+            </select>
+            <button id="generateOutfit">Generate Outfit</button>
+        </div>
+
+        <div class="outfit-display" id="outfitResult">
+            <div class="outfit-item" id="top"></div>
+            <div class="outfit-item" id="bottom"></div>
+            <div class="outfit-item" id="outerwear"></div>
+            <div class="outfit-item" id="accessories"></div>
+        </div>
+
+        <div class="save-section">
+            <button id="saveOutfit">Save Outfit</button>
+            <div id="savedOutfits"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
