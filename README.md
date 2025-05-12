@@ -39,14 +39,10 @@ A responsive weather application that provides real-time weather updates and loc
 
    Simply open `index.html` in your browser.
 
-### Configuration (Optional)
-
-* If you want to use additional features or your own API keys (e.g., for rate limits), you can configure them inside the JavaScript file.
 
 ## 🖼️ Screenshots
 
-*Add screenshots here if available to visually show the app’s features.*
-![App Screenshot](./img/Screenshot.JPG)
+![App Screenshot](./img/Screenshot.png)
 
 ## 🤝 Contributing
 
